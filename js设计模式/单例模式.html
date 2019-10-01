@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var mySingleton = (function() {
+            var instance;      //实例持有者
+            function init() {
+                function privateMethod() {
+                    console.log('im a private method');
+                }
+                var privateVariable = 'im a private variable';
+                var privateRandomNumber = Math.random();
+                return {
+                    publicMethod: function() {
+                        console.log('the public can see me');
+                    },
+                    publicProperty: 'im also public',
+                    getRandomNumber: function() {
+                        return privateRandomNumber;
+                    }
+                }
+            }
+
+            return {
+                // 获取singleton的实例
+                getInstance: function() {
+                    if(!instance) {
+                        instance = init();
+                    }
+                    return instance;
+                }
+            }
+        })();
+
+        var singleA = mySingleton.getInstance();
+        var singleB = mySingleton.getInstance();
+        console.log(singleA === singleB);    //true
+    </script>
+</body>
+</html>

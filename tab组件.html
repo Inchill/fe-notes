@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .tabBar > ul > li {
+            list-style: none;
+            display: inline-block;
+        }
+        .tabContent > ul > li {
+            list-style: none;
+            display: none;
+        }
+        .tabContent > ul > li:nth-child(1) {
+            list-style: none;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="tabBar">
+        <ul>
+            <li class="tab" onclick="tabClick(1)">tab1</li>
+            <li class="tab" onclick="tabClick(2)">tab2</li>
+            <li class="tab" onclick="tabClick(3)">tab3</li>
+            <li class="tab" onclick="tabClick(4)">tab4</li>
+        </ul>
+    </div>
+    <div class="tabContent">
+        <ul>
+            <li class="tabCon">content1</li>
+            <li class="tabCon">content2</li>
+            <li class="tabCon">content3</li>
+            <li class="tabCon">content4</li>
+        </ul>
+    </div>
+
+    <script>
+        var tabs = document.getElementsByClassName('tab');
+        var cons = document.getElementsByClassName('tabCon');
+        cons[0].style.display = 'block';
+        function tabClick(index) {
+            switch(index) {
+                case 1:
+                    cons[0].style.display = 'block';
+                    cons[1].style.display = 'none';
+                    cons[2].style.display = 'none';
+                    cons[3].style.display = 'none';
+                    break;
+                case 2:
+                    cons[0].style.display = 'none';
+                    cons[1].style.display = 'block';
+                    cons[2].style.display = 'none';
+                    cons[3].style.display = 'none';
+                    break;
+                case 3:
+                    cons[0].style.display = 'none';
+                    cons[1].style.display = 'none';
+                    cons[2].style.display = 'block';
+                    cons[3].style.display = 'none';
+                    break;
+                case 4:
+                    cons[0].style.display = 'none';
+                    cons[1].style.display = 'none';
+                    cons[2].style.display = 'none';
+                    cons[3].style.display = 'block';
+                    break;
+                default:break;
+            }
+        }
+    </script>
+</body>
+</html>

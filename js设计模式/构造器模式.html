@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1.1
+        // 2 ways to create an object
+        var newObject = {};
+        // var newObject = new Object();
+
+
+        // 4 ways to assign keys to an object
+        // 2.1 use dot(.)
+        // 2.2 use bracket([])
+        // 2.3 use defineProperty(), this can set only one property
+        Object.defineProperty(newObject, 'someKey', {
+            value: 'for more control of the property\'s behavior',
+            writable: true,
+            enumerable:true,
+            configurable:true
+        });
+        // 2.4 use defineProperties()
+        Object.defineProperties(newObject, {
+            'firstKey': {
+                value: 'hello world',
+                writable:true
+            },
+            'secondKey': {
+                value: 'the second key',
+                writable: false
+            }
+        });
+    </script>
+</body>
+</html>
