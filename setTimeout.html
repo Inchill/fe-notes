@@ -742,7 +742,7 @@
             // 数组扁平化(箭头函数不加大括号默认return)
             var fn = arr =>
                 [].concat(...arr.map(v =>
-                    Array.isArray(v)? fn(v):v 
+                    Array.isArray(v) ? fn(v):v 
             ));
             var a = fn([[2],[3],[[4],2],1]);
             console.log(a);
