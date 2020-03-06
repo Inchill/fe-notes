@@ -24,7 +24,7 @@
     }
 ```
 
-### 输入一个链表，按链表从尾到头的顺序返回一个ArrayList。
+### 输入一个链表，按链表从尾到头的顺序返回一个ArrayList。(与输出反转后的表头差不多)
 
 思路：顺序遍历把节点存入数组中，再反转。
 
@@ -150,7 +150,7 @@
 ```js
     function jumpFloor(number) {
         var a = 1;
-        for(var i = 1; i < number; i++) a *= 2;
+        for(var i = 1; i < number; i++) a *= 2;   // a = a * 2;
         return a;
     }
 ```
@@ -170,14 +170,14 @@
     }
 ```
 
-### 输入一个整数，输出该数二进制表示中1的个数。其中负数用补码表示。
+### 输入一个整数，输出该数二进制表示中1的个数。其中负数用补码表示。(不停与运算，直到结果为0)
 
 ```js
     function NumberOf1(n) {
         var count = 0;
         while(n) {
             count++;
-            n = n & (n - 1);
+            n = n & (n - 1);   
         }
         return count;
     }
@@ -193,7 +193,7 @@
                 for(var i = 2; i <= exponent; i++) {
                     result *= base;
                 }
-            }else {    // 如果是负数次方，需要调用parseFloat,对结果
+            }else {    // 如果是负数次方，需要调用parseFloat，取结果的倒数
                 exponent = -exponent;
                 for(var i = 2; i <= exponent; i++) {
                     result = parseFloat(result * base);
@@ -311,7 +311,7 @@
     }
 ```
 
-### 操作给定的二叉树，将其变换为源二叉树的镜像。
+### 操作给定的二叉树，将其变换为源二叉树的镜像。(与求二叉树深度一样)
 
 ```js
     /* function TreeNode(x) {
@@ -323,8 +323,8 @@
         if(!root) return null;
         var templeft = Mirror(root.left),
             tempright = Mirror(root.right);
-        root.left = templeft;
-        root.right = tempright;
+        root.left = tempright;
+        root.right = templeft;
         return root;
     }
 ```

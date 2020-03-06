@@ -29,10 +29,10 @@
         // 1.创建一个空的JavaScript对象
         const obj = {};
         // 2.将obj.__proto__指向Fn.prototype
-        Object.setPrototypeOf(obj, Fn.prototype)
+        Object.setPrototypeOf(obj, Fn.prototype);
         // 3.将this绑定到obj
         const result = Fn.apply(obj, ...args);
-        // 4.返回新对象(如果Fn函数没有返回对象，则返回this)
+        // 4.返回新对象(如果Fn函数没有返回对象，则返回当前obj)
         return result instanceof Object ? result : obj;
     }
 ```
