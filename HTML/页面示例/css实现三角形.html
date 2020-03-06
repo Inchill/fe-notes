@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        #box {
+            width: 0;
+            height: 0;
+            /* 当边框逐渐增大时会出现斜线，就是利用这个特点画三角形 */
+            border: 100px solid;
+
+            border-top-color: red;
+            border-left-color: red;
+            border-right-color: transparent;
+            border-bottom-color: transparent;
+        }
+
+        /* 半圆 */
+        #circle {
+            width: 100px;
+            height: 50px;
+            border: 1px solid blue;
+            border-radius: 50px 50px 0 0;  /* 左上 右上 右下 左下 ，不要再用百分比 */
+            background-color: blue;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <div id="circle"></div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .box {
+            width: 100%;
+            height: 200px;
+            background-color: #ccc;
+        }
+        /* 需求：
+        w<768 子元素宽度为父容器的100%
+        768~992 每一行放置2个子元素   50%
+        992~1200 放3个
+        w>1200 放4个 25%
+        */
+
+        .box>div {
+            width: 100%;
+            height: 100%;
+            background-color: skyblue;
+            box-sizing: border-box;
+            border-bottom: 2px solid blue;
+            border-right: 2px solid blue;
+            float: left;
+        }
+
+        /* 768~992 每一行放置2个子元素   50% */
+        @media screen and (min-width:768px) {
+            .box>div {
+                width: 50%;
+            }
+        }
+
+        /* 992~1200 放3个 33.33% */
+        @media screen and (min-width:992px) {
+            .box>div {
+                width: 33.3%;
+            }
+        }
+
+        /* w>1200 放4个 25% */
+        @media screen and (min-width:1200px) {
+            .box>div {
+                width: 25%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

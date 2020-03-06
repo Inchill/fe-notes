@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main img {
+            width: 100%;
+            height: 800px;
+            margin-bottom: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <img src="" alt="" data-src="../页面示例/images/Cech.jpg">
+        <img src="" alt="" data-src="../页面示例/images/Cech2.jpg">
+        <img src="" alt="" data-src="../页面示例/images/Ramsey.jpg">
+        <img src="" alt="" data-src="../页面示例/images/a.jpg">
+        <img src="" alt="" data-src="../页面示例/images/arsenal.jpg">
+        <img src="" alt="" data-src="../页面示例/images/b.jpg">
+        <img src="" alt="" data-src="../页面示例/images/c.jpg">
+        <img src="" alt="" data-src="../页面示例/images/logo.png">
+        <img src="" alt="" data-src="../页面示例/images/Cech.jpg">
+        <img src="" alt="" data-src="../页面示例/images/Cech2.jpg">
+    </main>
+    <footer></footer>
+
+    <script>
+        var imgs = document.getElementsByTagName('img');
+        LazyLoad();   // 先加载首图
+        window.onscroll = function() {
+            LazyLoad();
+        }
+
+        function LazyLoad() {
+            // for(var i = 0; i < imgs.length; i++) {
+            //     // 元素与页面顶部距离
+            //     var imgH = imgs[i].offsetTop;
+            //     // 窗口高度
+            //     var clientH = document.documentElement.clientHeight;
+            //     // 滚动的距离
+            //     var scrollH = document.documentElement.scrollTop || document.body.scrollTop;
+            //     if(clientH + scrollH > imgH) {
+            //         imgs[i].src = imgs[i].getAttribute('data-src');
+            //     }
+            // }
+
+            Array.from(imgs).forEach(item => {
+                var imgH = item.offsetTop;
+                // 窗口高度
+                var clientH = document.documentElement.clientHeight;
+                // 滚动的距离
+                var scrollH = document.documentElement.scrollTop || document.body.scrollTop;
+                if(clientH + scrollH > imgH) {
+                    item.src = item.getAttribute('data-src');
+                }
+            })
+        }
+    </script>
+</body>
+</html>

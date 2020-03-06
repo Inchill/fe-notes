@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 开发环境版本，包含了有帮助的命令行警告 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>    
+</head>
+<body>
+    <div id="app">
+        <son v-bind:parentmsg="msg"></son>
+        <!-- 通过事件绑定传递方法 -->
+        <!-- show()是先执行了函数，把结果绑定了 -->
+        <son2 v-on:parentfunc="show"></son2>
+    </div>
+
+
+
+    <!-- 必须要有根容器 -->
+    <template id="tmp1">
+        <div>
+            <h1>this is son2</h1>
+            <input type="button" value="点击调用父组件传递的方法" v-on:click="sonclick">
+        </div>
+    </template>
+
+
+
+    <script>
+        var vm = new Vue({
+            el: '#app',
+            data: {
+                msg: '123',
+                datafromson: null
+            },
+            methods: {
+                // 子组件调用时可以传参，个数任意，相当于变相子组件向父组件传值
+                show(arg) {
+                    alert('this is a show function of parent');
+                    console.log(arg);
+                    this.datafromson = arg;
+                }
+            },
+            components: {
+                son: {
+                    template: '<h1>this is son---{{ parentmsg }}</h1>',
+                    props: ['parentmsg']
+                },
+                son2: {
+                    template: '#tmp1',
+                    data() {
+                        return {
+                            sonmsg: { name:'zs', age: 22 }
+                        }
+                    },
+                    methods: {
+                        sonclick() {
+                            // 得到父组件传递的方法，可以给方法传参
+                            this.$emit('parentfunc', this.sonmsg);
+                        }
+                    }
+                }
+            }
+        })
+    </script>
+</body>
+</html>

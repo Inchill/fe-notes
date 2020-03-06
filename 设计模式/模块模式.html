@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1.use object literal
+        var myObjectLiteral = {
+            myProperty: 'someValue',
+            //object literal can contain properties and functions
+            myConfig: {
+                useCaching: true,
+                language: 'en'
+            },
+            // basic functions
+            myMethod: function() {
+                console.log('it is a function');
+            },
+            // Output information according to the current configuration
+            myMethod2: function() {
+                console.log('Caching is:' + this.myConfig.useCaching);
+            },
+            // rewrite the current configuration
+            myMethod3: function(newConfig) {
+                if(typeof newConfig === 'object') {
+                    this.myConfig = newConfig;
+                    console.log(this.myConfig.language);
+                }
+            }
+        };
+
+        myObjectLiteral.myMethod();
+        myObjectLiteral.myMethod2();
+        myObjectLiteral.myMethod3({
+            useCaching: false,
+            language: 'chinese'
+        });
+
+
+
+
+        // 2.use module mode
+        // 2.1 in this way we cannot directly read incrementCounter() or resetCounter()
+        var testModule = (function() {
+            var counter = 0;
+            return {
+                incrementCounter: function() {
+                    return ++counter;
+                },
+                resetCounter: function() {
+                    counter = 0;
+                }
+            }
+        })();
+        // 2.2 below is a module which contains namespace, public and private variables
+        var myNamespace = (function() {
+            //private counter variable
+            var myPrivateVar = 0;
+            //a private function that records all parameters
+            var myPrivateMethod = function(foo) {
+                console.log(foo);
+            };
+
+            return {
+                //public variable
+                myPublicVar: 'foo',
+                // Call public functions of private variables and methods
+                myPublicFunction: function(bar) {
+                    //Increase private counter value
+                    myPrivateVar++;
+                    // Incoming bar call private method
+                    myPrivateMethod(bar);
+                }
+            }
+        })();
+        // 2.2.2
+        var basketModule = (function() {
+            // private
+            var basket = [];
+            function doSomethingPrivate() {
+
+            }
+            function doSomethingElsePrivate() {
+
+            }
+            // return an  object 
+            return {
+                // add item to basket
+                addItem: function(values) {
+                    basket.push(values);
+                },
+                // get the number of basket
+                getItemCount: function() {
+                    return basket.length;
+                },
+                // Public function alias of a private function
+                doSomething: doSomethingPrivate,
+                // get the total value of the basket
+                getTotal:function() {
+                    var itemCount = this.getItemCount(), total = 0;
+                    while(itemCount--) {
+                        total += basket[itemCount].price;
+                    }
+                    return total;
+                }
+            } 
+        })();
+        basketModule.addItem({
+            item: 'bread',
+            price: 3.5
+        });
+        basketModule.addItem({
+            item: 'butter',
+            price: 5
+        });
+        console.log(basketModule.getItemCount());
+        console.log(basketModule.getTotal());
+    </script>
+</body>
+</html>
