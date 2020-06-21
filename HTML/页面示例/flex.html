@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex布局</title>
+    <style>
+        * {
+            outline: 1px #ccc solid;
+            margin: 10px;
+            padding: 10px;
+        }
+        body, nav, main, article {
+            display: flex;
+        }
+        body, article {
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>flex-direction属性</h1>
+    </header>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/blog">Blog</a>
+        <a href="/careers">Careers</a>
+        <a href="/contact">Contact</a>
+    </nav>
+    <main>
+        <article>
+            <img src="#">
+            <p>This is some awesome content that is on the page.</p>
+            <button>Go Somewhere</button>
+        </article>
+        <article>
+            <img src="#">
+            <p>This is more content that is about Cech.</p>
+            <button>Click Me</button>
+        </article>
+        <article>
+            <img src="#">
+            <p>This is some awesome content thiat is about Ramsey.</p>
+            <button>Do Something</button>
+        </article>
+    </main>
+    <footer>Copyright &#169; 2020</footer>
+</body>
+</html>
