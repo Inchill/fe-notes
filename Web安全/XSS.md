@@ -52,10 +52,12 @@ DOM 型 XSS 的攻击步骤：
 - 非url，我们可以这样进行编码：
 ```javascript
     function encodeHtml(str) {
+        if(!str) return '';
         return str.replace(/"/g, '&quot;')
                 .replace(/'/g, '&apos;')
                 .replace(/</g, '&lt;')
-                .replace(/>/g, '&gt;');
+                .replace(/>/g, '&gt;')
+                .replace(/&/g, '&amp');
     }
 ```
 
@@ -74,7 +76,7 @@ DOM 型 XSS 攻击中，取出和执行恶意代码由浏览器端完成，属�
 
 这种攻击常见于带有用户保存数据的网站功能，如论坛发帖、商品评论、用户私信等。
 
-###### 如何防范？
+###### 如何防范存储型XSS攻击？
 
 - 前端数据传递给服务器之前，先转义/过滤(防范不了抓包修改数据的情况)
 - 服务器接收到数据，在存储到数据库之前，进行转义/过滤
