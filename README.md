@@ -1,8 +1,10 @@
-## 前端基础知识总结
+# 前端知识
 
-**我是2020届的前端，秋招已拿到心仪offer，这是我笔试和面试遇到的以及平时学习收集整理的资料，希望对小伙伴们有帮助**
+## Why?
 
-这个项目主要涉及到前端面试的许多方面，因此我把它划分为以下目录：
+我是在参加2020届秋招的时候
+
+分为以下目录：
 
 ```
 FENotes
@@ -71,6 +73,7 @@ FENotes
 |   ├─XSS.md
 |   └点击劫持.md
 ├─Webpack
+|    └README.md
 ├─Vue
 |  ├─computed和watch.md
 |  ├─vue-router.md
@@ -79,9 +82,17 @@ FENotes
 |  |  ├─main.js
 |  |  └Vnode.js
 ├─Vite
+|  └README.md
 ├─TypeScript
+|     └README.md
+├─Redux
+|   └README.md
+├─React
+|   └README.md
 ├─PostCSS
+|    └README.md
 ├─NodeJS
+|   └README.md
 ├─JavaScript
 |     ├─BOM和DOM.md
 |     ├─ES6.md
@@ -126,6 +137,8 @@ FENotes
 |  |  |   ├─Cech2.jpg
 |  |  |   ├─logo.png
 |  |  |   └Ramsey.jpg
+├─Deno
+|  └README.md
 ├─CSS
 |  ├─CSS3.md
 |  ├─flex.md
