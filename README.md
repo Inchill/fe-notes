@@ -1,8 +1,8 @@
 # 前端知识
 
-💻**star**一个表鼓励，也不容易搞丢链接哦!
+💻**star** encourages me, and it is not easy to lose the link!
 
-💻**star**encourages it, and it is not easy to lose the link!
+💻**star**一个表鼓励，也不容易搞丢链接哦!
 
 ## Why?
 
