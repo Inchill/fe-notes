@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preview Slideshow</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            padding: 50px 0;
+            background-color: #fff;
+            font-size: 14px;
+            font-family: 'Avenir next';
+            color: #555;
+            -webkit-font-smoothing: antialiased;  /**字体抗锯齿**/
+        }
+        .slider,
+        .slider .main,
+        .slider .main .main-i {
+            width: 100%;
+            height: 400px;
+            position: relative;
+        }
+        /* 幻灯片区域 */
+        .slider .main {
+            overflow: hidden;
+        }
+        /* 每个幻灯片样式 */
+        .slider .main .main-i {
+
+        }
+        .slider .main .main-i img {
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .slider .main .main-i .caption {
+            position: absolute;
+            right: 50%;
+            top: 30%;
+            z-index: 1;
+        }
+        .slider .main .main-i .caption h2 {
+            font-size: 40px;
+            line-height: 50px;
+            color: #b5b5b5;
+            text-align: right;
+        }
+        .slider .main .main-i .caption h3 {
+            font-size: 70px;
+            line-height: 70px;
+            color: #000;
+            text-align: right;
+            font-family: 'Open Sans Condensed';
+        }
+        /* 控制按钮区域 */
+        .slider .ctrl {
+            width: 100%;
+            height: 13px;
+            line-height: 13px;
+            text-align: center;
+            position: absolute;
+            left: 0;
+            bottom: -13px;
+            background-color: #f00;
+        }
+        .slider .ctrl .ctrl-i {
+            display: inline-block;
+            width: 150px;
+            height: 13px;
+            background-color: #666;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+            position: relative;
+            margin-left: 1px;
+        }
+        .slider .ctrl .ctrl-i img {
+            width: 100%;
+            position: absolute;
+            left: 0;
+            bottom: 13px;
+            opacity: 0;
+            transition: all .6s;
+        }
+        .slider .ctrl .ctrl-i:hover {
+            background-color: #f0f0f0;
+        }
+        .slider .ctrl .ctrl-i:hover img {
+            bottom: 13px;
+            opacity: 1;
+            /* 添加倒影 */
+            -webkit-box-reflect: below 0px -webkit-gradient(
+                linear,
+                left top,
+                left bottom,
+                from( transparent ),
+                color-stop( 50%, transparent ),
+                to( rgba(255, 255, 255, .3) )
+            );
+        }
+        .slider .ctrl .ctrl-i_active:hover,
+        .slider .ctrl .ctrl-i_active {
+            background-color: #000;
+        }
+        .slider .ctrl .ctrl-i_active:hover {
+            opacity: 1;
+        }
+        /* 幻灯片切换样式 */
+        .slider .main .main-i {
+            opacity: 0;
+            position: absolute;
+            right: 50%;
+            top: 0;
+        }
+        .slider .main .main-i h2 {
+            margin-right: 45px;
+        }
+        .slider .main .main-i h3 {
+            margin-right: -45px;
+        }
+        .slider .main .main-i h2,
+        .slider .main .main-i h3 {
+            transition: all 1s;
+        }
+        .slider .main .main-i_active {
+            opacity: 1;
+            right: 0;
+        }
+        .slider .main .main-i_active h2,
+        .slider .main .main-i_active h3 {
+            margin-right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <div class="main">
+            <div class="main-i main-i_active">
+                <div class="caption">
+                    <h2>h2 caption</h2>
+                    <h3>h3 caption</h3>
+                </div>
+                <img src="images/a.jpg">
+            </div>
+            <div class="main-i main-i_active">
+                <div class="caption">
+                    <h2>h2 caption</h2>
+                    <h3>h3 caption</h3>
+                </div>
+                <img src="images/b.jpg">
+            </div>
+        </div>
+
+        <div class="ctrl">
+            <a class="ctrl-i ctrl-i_active" href="javascript:;">
+                <img src="images/a.jpg">
+            </a>
+            <a class="ctrl-i ctrl-i_active" href="javascript:;">
+                <img src="images/b.jpg">
+            </a>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function switchPic () {
+            var ctrl_i = document.getElementsByClassName('ctrl-i');
+        }
+    </script>
+</body>
+</html>
