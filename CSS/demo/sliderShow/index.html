@@ -36,7 +36,7 @@
             width: 100%;
             position: absolute;
             left: 0;
-            top: 0;
+            top: 50%;
         }
         .slider .main .main-i .caption {
             position: absolute;
@@ -83,7 +83,7 @@
             left: 0;
             bottom: 13px;
             opacity: 0;
-            transition: all .6s;
+            transition: all .8s 1s;
         }
         .slider .ctrl .ctrl-i:hover {
             background-color: #f0f0f0;
@@ -123,7 +123,8 @@
         }
         .slider .main .main-i h2,
         .slider .main .main-i h3 {
-            transition: all 1s;
+            transition: all 1s .6s;
+            opacity: 0;
         }
         .slider .main .main-i_active {
             opacity: 1;
@@ -132,41 +133,91 @@
         .slider .main .main-i_active h2,
         .slider .main .main-i_active h3 {
             margin-right: 0;
+            opacity: 1;
         }
     </style>
 </head>
 <body>
     <div class="slider">
-        <div class="main">
-            <div class="main-i main-i_active">
+        <div class="main" id="template_main">
+            <div class="main-i" id="main_{{ index }}">
                 <div class="caption">
-                    <h2>h2 caption</h2>
-                    <h3>h3 caption</h3>
+                    <h2>{{ h2 }}</h2>
+                    <h3>{{ h3 }}</h3>
                 </div>
-                <img src="images/a.jpg">
-            </div>
-            <div class="main-i main-i_active">
-                <div class="caption">
-                    <h2>h2 caption</h2>
-                    <h3>h3 caption</h3>
-                </div>
-                <img src="images/b.jpg">
+                <img src="images/{{ index }}.jpg" class="picture">
             </div>
         </div>
 
-        <div class="ctrl">
-            <a class="ctrl-i ctrl-i_active" href="javascript:;">
-                <img src="images/a.jpg">
-            </a>
-            <a class="ctrl-i ctrl-i_active" href="javascript:;">
-                <img src="images/b.jpg">
+        <div class="ctrl" id="template_ctrl">
+            <a class="ctrl-i" id="ctrl_{{ index }}" 
+                href="javascript:switchSlider({{ index }});">
+                <img src="images/{{ index }}.jpg">
             </a>
         </div>
     </div>
 
     <script type="text/javascript">
-        function switchPic () {
-            var ctrl_i = document.getElementsByClassName('ctrl-i');
+        var data = [
+            { img: 1, h1: 'Creative', h2: 'DUET' },
+            { img: 2, h1: 'Friendly', h2: 'DEVIL' },
+            { img: 3, h1: 'Tranquilent', h2: 'COMPATRIOT' },
+            { img: 4, h1: 'Insecure', h2: 'HUSSLER' },
+            { img: 5, h1: 'Loving', h2: 'REBEL' },
+            { img: 6, h1: 'Passionate', h2: 'SEEKER' },
+            { img: 7, h1: 'Crazy', h2: 'FRIEND' }
+        ];
+
+        var g = function (id) {
+            if (id.substr(0, 1) === '.') {
+                return document.getElementsByClassName(id.substr(1));
+            }
+            return document.getElementById(id);
+        }
+
+        function addSliders () {
+            var tpl_main = g('template_main').innerHTML.replace(/^\s*/, '').replace(/\s*$/, ''),
+                tpl_ctrl = g('template_ctrl').innerHTML.replace(/^\s*/, '').replace(/\s*$/, '');
+            var out_main = [],
+                out_ctrl = [];
+            for (i in data) {
+                var _html_main = tpl_main.replace(/{{ index }}/g, data[i].img)
+                                            .replace(/{{ h2 }}/g, data[i].h1)
+                                            .replace(/{{ h3 }}/g, data[i].h2),
+                    _html_ctrl = tpl_ctrl.replace(/{{ index }}/g, data[i].img);
+                out_main.push(_html_main);
+                out_ctrl.push(_html_ctrl);
+            }
+            g('template_main').innerHTML = out_main.join('');
+            g('template_ctrl').innerHTML = out_ctrl.join('');
+        }
+
+        function switchSlider (n) {
+            var clear_main = g('.main-i'),
+                clear_ctrl = g('.ctrl-i');
+            for (i = 0; i < clear_ctrl.length; i++) {
+                clear_ctrl[i].className = clear_ctrl[i].className.replace(' ctrl-i_active', '');
+                clear_main[i].className = clear_main[i].className.replace(' main-i_active', '');
+            }
+            var main = g('main_' + n),
+                ctrl = g('ctrl_' + n);
+            main.className += ' main-i_active';
+            ctrl.className += ' ctrl-i_active';
+        }
+
+        function movePictures () {
+            var pictures = g('.picture');
+            for (i = 0; i < pictures.length; i++) {
+                pictures[i].style.marginTop = (-1 * pictures[i].clientHeight / 2) + 'px';
+            }
+        }
+
+        window.onload = function () {
+            addSliders();
+            switchSlider(2);
+            setTimeout(() => {
+                movePictures();
+            }, 100)
         }
     </script>
 </body>
