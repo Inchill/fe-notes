@@ -124,7 +124,6 @@ FENotes
 |     ├─模块.md
 |     ├─编程题.md
 |     ├─images
-|     |   └js执行机制.png
 ├─HTML
 |  ├─页面示例
 |  |  ├─css实现三角形.html
@@ -145,14 +144,6 @@ FENotes
 |  |  ├─路由.html
 |  |  ├─防抖函数.html
 |  |  ├─images
-|  |  |   ├─a.jpg
-|  |  |   ├─arsenal.jpg
-|  |  |   ├─b.jpg
-|  |  |   ├─c.jpg
-|  |  |   ├─Cech.jpg
-|  |  |   ├─Cech2.jpg
-|  |  |   ├─logo.png
-|  |  |   └Ramsey.jpg
 ├─Deno
 |  └README.md
 ├─CSS
@@ -163,8 +154,6 @@ FENotes
 |  ├─居中.md
 |  ├─画三角形.md
 |  ├─images
-|  |   ├─flex基本概念.png
-|  |   └容器.png
 ```
 
 有疑问的同学也可以加我**微信**： inchill
