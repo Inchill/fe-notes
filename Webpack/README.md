@@ -1,3 +1,3 @@
 # Webpack
 
-how to master the webpack
+how to master webpack
