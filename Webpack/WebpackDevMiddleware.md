@@ -96,3 +96,10 @@ const webpackHotMiddleware = require('webpack-hot-middleware');
 
 app.use(webpackHotMiddle(compiler));
 ```
+最后，修改`main.js`文件，在末尾加入：
+
+```js
+if (module.hot) {
+  module.hot.accept();
+}
+```
