@@ -103,3 +103,7 @@ if (module.hot) {
   module.hot.accept();
 }
 ```
+
+## 推荐阅读
+
+[《webpack-dev-middleware 源码解读》](https://www.zoo.team/article/webpack-dev-middleware)
