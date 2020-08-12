@@ -72,3 +72,27 @@ app.use(webpackDevMiddleware(compiler, {
 
 ## 模块热替换
 
+webpack-dev-middleware 并没有实现模块热替换功能，而是 DevServer 自己实现了该功能。
+
+为了在使用 webpack-dev-middleware 时也能使用模块热替换功能去提升开发效率，需要额外的再接入 webpack-hot-middleware。
+
+修改`webpack.config.js`文件，加入`HotModuleReplacementPlugin`插件:
+
+```js
+const HotModuleReplacementPlugin = require('webpack/lib/HotModuleReplacementPlugin');
+
+module.exports = {
+  plugins: [
+    // 为了支持模块热替换，生成 .hot-update.json 文件
+    new HotModuleReplacementPlugin()
+  ]
+}
+```
+
+再在http服务器使用该中间件：
+
+```js
+const webpackHotMiddleware = require('webpack-hot-middleware');
+
+app.use(webpackHotMiddle(compiler));
+```
