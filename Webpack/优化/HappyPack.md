@@ -6,7 +6,7 @@
 
 HappyPack 就能让 Webpack 做到这点，它把任务分解给多个子进程去并发的执行，子进程处理完后再把结果发送给主进程。
 
-[guthub链接](https://github.com/amireh/happypack)
+[github链接](https://github.com/amireh/happypack)
 
 ## Configuration
 
