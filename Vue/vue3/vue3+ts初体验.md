@@ -259,4 +259,39 @@ export default defineComponent({
 
 这里需要使用到 watch 函数，方便我们在勾选复选框时，状态能及时改变。不同于 vue2.0 里的 watch 选项，vue3.0 里的 watch 是一个纯函数，并且可以多次使用，它接收的参数包括：监听目标、回调函数和可选项，第三个参数接收一个对象，里面包含深度监听和立即执行选项。
 
+## 关于 getCurrentInstance 获取当前组件实例
+
+在 vue2 里，我们在创建根实例并挂载 router 之后，以后在任何组件里就可以通过 `this.$router.xxx` 来使用路由。但是在 vue3 里，由于 setup 函数是围绕 beforeCreate 和 created 钩子来运行的，因此不能通过 this 获取组件实例。推荐的做法是通过导入 `vue-router` 的 `useRouter` 和 `useRoute` 来路由跳转即获取路由传递的参数。
+
+但是在 vue3 里，提供了 `getCurrentInstance` 函数，顾名思义，这个函数的作用是用于获取当前组件实例的。然后我调用该函数，打印了一下当前实例：
+
+<img src="./images/dev-ctx.png" width="600"/>
+
+点击查看 ctx 详情：
+
+<img src="./images/dev-ctx2.png" width="600"/>
+
+看起来可以直接像在 `vue2` 里一样通过 `ctx.$router.xxx` 来使用路由，于是我做了下尝试：
+
+```ts
+const { ctx } = getCurrentInstance()
+console.log('current instance:', ins)
+```
+
+但是 typescript 立马就推断出了类型错误：
+
+<img src="./images/ctx-err.png" width="600"/>
+
+这里会 ctx 为一个联合类型，既可能为 `ComponentInternalInstance` 类型，也可能为 `null` 类型。我们可以看看 `ComponentInternalInstance` 接口里声明了哪些类型：
+
+<img src="./images/ctx-declare.png" width="600"/>
+
+这就很奇怪了，为什么我能在上述 `getCurrentInstance` 里拿到 ctx 呢？原来 vite 默认用的是开发环境，这样是便于开发阶段拿到实例，于是我切换到了生产环境：
+
+<img src="./images/prod-ctx.png" width="600"/>
+
+<img src="./images/prod-ctx2.png" width="600"/>
+
+能看到 ctx 里面没有了 $router 对象，所以在生产环境下通过 `getCurrentInstance` 获取实例来拿到 $router 对象是不可取的，因此最好还是用 vue-router 提供的方式。
+
 以上便是关于 vue3.0 + ts 的初体验。
