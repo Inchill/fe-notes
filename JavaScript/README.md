@@ -1,0 +1,1 @@
+[js 方法封装](https://mp.weixin.qq.com/s/pp56PSMLmrAV2iqLnngHcQ)
