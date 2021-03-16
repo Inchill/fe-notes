@@ -53,3 +53,9 @@
 [什么是CommonJs和Es Module及它们的区别](https://mp.weixin.qq.com/s/eSXehIZII0GDyqN7nW1lUQ)
 
 [iCSS 开篇灵魂发问：如何巧妙的实现左边框](https://mp.weixin.qq.com/s/8c5WsHwJYbM7ArH5sBvyrg)
+
+[前端开发者必备的12个工具](https://mp.weixin.qq.com/s/9E1s11KYzmc7E2rb7fRTeg)
+
+[代码自动化重构利器——jscodeshift 初探](https://mp.weixin.qq.com/s/ja354IuaUt1JuF604TF1eA)
+
+[大型 Web 应用插件化架构探索](https://mp.weixin.qq.com/s/pIRFNpAo8WWinow_2jcGZg)
