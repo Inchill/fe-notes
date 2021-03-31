@@ -22,6 +22,8 @@
 
 ### 2021
 
+#### march
+
 [VS Code 必知必会的 20 个快捷键！](https://mp.weixin.qq.com/s/pdk7FSrnICOEOG5iA005aw)
 
 [ECMAScript 2021新特性](https://jelly.jd.com/article/5febdfbb846cc00148ae36d7)
@@ -75,3 +77,131 @@
 [百度前端工程化之H5性能优化篇](https://mp.weixin.qq.com/s/MkjhXm7HnQ_J-sLqD_UVDw)
 
 [面试官：说说 JavaScript 数字精度丢失的问题，解决方案？](https://mp.weixin.qq.com/s/JWs3QNTykADbEQZm9EVv6g)
+
+[vue-cli 迁移 vite2 实践小结](https://mp.weixin.qq.com/s/B0UwjI2c5LEY0ko48qHRsQ)
+
+[JS 项目中究竟应该使用 Object 还是 Map？| 项目复盘](https://mp.weixin.qq.com/s/VQLBNG17LYXybSKtfp-WSg)
+
+[一文弄懂 CSS 中重要的 BFC（附图解）](https://mp.weixin.qq.com/s/16mWC9Dh4p3wguhuoqsyfQ)
+
+[我在架构设计和代码开发中的一些常用原则](https://mp.weixin.qq.com/s/XAdSl1zkOeJpcWHrS0IAVw)
+
+[总结18个 webpack 插件，总会有你想要的！](https://mp.weixin.qq.com/s/oKuLy_ud3WMSE0L2E6LghQ)
+
+[终于理解了 JavaScript 闭包](https://mp.weixin.qq.com/s/uyAq80zDlGXH7hwjay5BLw)
+
+[Vue CLI 是如何实现的 -- 终端命令行工具篇](https://mp.weixin.qq.com/s/nUNBNBcSs1AoINI3GLlQcg)
+
+[React 和 Vue 的 diff 时间复杂度O(n^3) 和 O(n) 是如何计算出来的](https://mp.weixin.qq.com/s/k6NYlRaJPeQ_Kn2iZGAEUA)
+
+[关于 z-index，你可能一直存在误区](https://mp.weixin.qq.com/s/XyRFMdVkPcOvMxDDeHFyiQ)
+
+[面试官：JavaScript如何判断一个元素是否在可视区域中？](https://mp.weixin.qq.com/s/7lZL6Zkm2AqwfzysXcBz6Q)
+
+[仅使用CSS提高页面渲染速度](https://mp.weixin.qq.com/s/uga8enKl1Yx7yE6d8Bn0bQ)
+
+[有用】移动端必备的H5问题及解决方案](https://mp.weixin.qq.com/s/5mnpuoW_BqNU6dZfzJZrMw)
+
+[阿里面试官问“说一下从 url 输入到返回请求的过程”的难度就是不一样！](https://mp.weixin.qq.com/s/n59oQae3Cm8_kfHb4fNIFw)
+
+[花五分钟重新认知 Vue 项目 src 目录](https://mp.weixin.qq.com/s/U8zSuV1nvOKu0ffv9o5Ozw)
+
+[探索微前端的场景极限](https://www.zhihu.com/column/p/355419817)
+
+[Flexbox布局中不为人知的细节](https://mp.weixin.qq.com/s/KIqcUSxhCYEcfGVHPf5Gkg)
+
+[构建效率大幅提升，webpack5 在企鹅辅导的升级实践](https://mp.weixin.qq.com/s/P3foOrcu4StJDGdX9xavng)
+
+[用JS解释JS！详解AST及其应用](https://mp.weixin.qq.com/s/SlXIjnwbHS_enHXlZAnMMw)
+
+[如何优雅地加载 Fonts](https://mp.weixin.qq.com/s/0XoqKhr6rAnSsEqeVZkmEA)
+
+[从低代码到无代码：可视化逻辑编排](https://mp.weixin.qq.com/s/1fTGOmgT-1_UYSRMpi0IYw)
+
+[【第2235期】CORS完全手冊之跨来源的安全性问题](https://mp.weixin.qq.com/s/VKgWT5KEw3o6613abuiDRw)
+
+[【Vue3教程】创建你的第一个Vue 3项目](https://mp.weixin.qq.com/s/vqRfJtXcXg6fS_aeX0x8jQ)
+
+[一文了解二维码扫码登录背后的秘密](https://mp.weixin.qq.com/s/1nrx0A7n6vLfMtM0jv3Bfw)
+
+[面试官：大文件上传如何做断点续传？](https://mp.weixin.qq.com/s/5KPCzcX5T0UbR4_P1pd4NQ)
+
+[2021年前端开发者需要知道的34种JS优化技巧](https://mp.weixin.qq.com/s/26RFa_CTekfSInUyl_YedA)
+
+[Vite 解析以及从 webpack 切换到 Vite 遇到的问题总结](https://mp.weixin.qq.com/s/13qGJVi5atjnvTtwVNY8iQ)
+
+[面试官：什么是单点登录？如何实现？](https://mp.weixin.qq.com/s/8qJt8i_DSXY5zDh2ir_2gw)
+
+[关于图片性能优化，你必须知道的](https://mp.weixin.qq.com/s/iAutzDzKQ7ELG_XSGmZhEA)
+
+[吃透移动端 H5 响应式布局](https://mp.weixin.qq.com/s/-RxtXIUYAIbrRudoW_NfzA)
+
+[超详细Hexo+Github Page搭建技术博客教程（含SEO优化）](https://mp.weixin.qq.com/s/fTAmZfjpuFc9hdeqgrwmkw)
+
+[设计稿（UI视图）自动生成代码方案的探索](https://mp.weixin.qq.com/s/rwl6rX_cGTtVYkVDy94bQQ)
+
+[前端 Code Review 的最佳实践方案](https://mp.weixin.qq.com/s/C2DNdRyoXR9CYRxB0mQ7qA)
+
+[用最简洁代码实现 indexOf 方法](https://mp.weixin.qq.com/s/ErVTj0dcWPgV0QDItjHGKA)
+
+[关于 v-model 你需要知道的这一切！](https://mp.weixin.qq.com/s/oGJ6kAbtcFIWHpD2belE8Q)
+
+[面试官：web常见的攻击方式有哪些？如何防御？](https://mp.weixin.qq.com/s/WWxWJwjnsfINg2QgmPSa_w)
+
+[深入理解前端埋点与监控](https://mp.weixin.qq.com/s/eq_tw8ZEqVZOGEXc5zIjPA)
+
+[如何创建一个自动改变的 favicon](https://mp.weixin.qq.com/s/sqxKDQZddxeeJoI3xZkfRw)
+
+[快速实现一个分布式定时器](https://mp.weixin.qq.com/s/ggPftQm2ewGOJwlRDQGgDQ)
+
+[反直觉！浏览器到底是如何下载资源的](https://mp.weixin.qq.com/s/S0xnKhdIWzyfWurZ-V9oLA)
+
+[字节跳动面试官：请用JS实现Ajax并发请求控制](https://mp.weixin.qq.com/s/mC6RE2woxLtIziHOj-eIuA)
+
+[很多人上来就删除的package-lock.json，还有这么多你不知道的（深度内容）](https://mp.weixin.qq.com/s/9H7T-m0TEwg-WjwAW4cqJA)
+
+[面试官：JavaScript中执行上下文和执行栈是什么？](https://mp.weixin.qq.com/s/RgR2MMxQeVdai4lditogIQ)
+
+[当面试官问Webpack的时候他想知道什么](https://mp.weixin.qq.com/s/QOmgzkXKQ15KqzmTJ8GGQA)
+
+[写 Node.js 代码，从学会调试开始](https://mp.weixin.qq.com/s/494q1a3eTBVO1UZ1QKBWiA)
+
+[理解 ECMAScript 规范（1）](https://mp.weixin.qq.com/s/scA3PepT_JcNk0U4EXbHwA)
+
+[Charts.css：一个数据可视化开源神器](https://mp.weixin.qq.com/s/cY99gQzmfuFwpMYVcpLpPA)
+
+[你真的提升了用户体验？](https://mp.weixin.qq.com/s/sF4de-fVmW52RF1AdomvWA)
+
+[实现一个360全景的N种方案](https://mp.weixin.qq.com/s/FRLnaC0wWyLylibufmxERg)
+
+[经得住拷问的HTTPS原理解析](https://mp.weixin.qq.com/s/atyLhnc2flGwoJpSHBoKTQ)
+
+[CSS 实现优惠券的技巧](https://mp.weixin.qq.com/s/zechRBhpYy48smFQKvtb0g)
+
+[这些鲜为人知的前端冷知识，你都GET了吗？](https://mp.weixin.qq.com/s/OvV_lyuXYX7N9uPP1CMoPA)
+
+[不可思议的纯CSS导航栏下划线跟随效果](https://mp.weixin.qq.com/s/EF3IjuQJWmliGPrOfC29tQ)
+
+[【第2241期】TypeScript类型编写指南之上篇](https://mp.weixin.qq.com/s/pykw3eF5-ZFWUAmTUhTqZQ)
+
+[【第2242期】TypeScript类型编写指南之下篇](https://mp.weixin.qq.com/s/I_5rAit7rYxisLZNlxHxPA)
+
+[TypeScript进阶 之 重难点梳理](https://mp.weixin.qq.com/s/r_F0hq7njiF2uIVIWGZfeg)
+
+[基于逻辑复用的联合跨端思路与实践](https://mp.weixin.qq.com/s/JpetSccSltzOjAQ3sPS__w)
+
+[通过自定义 Vue 指令实现前端曝光埋点](https://mp.weixin.qq.com/s/I-ttIv13UDSeKMIKyXqGQA)
+
+[一文读懂块语句中的函数声明](https://mp.weixin.qq.com/s/0CI53KqjzkEfPp7FvC-GcQ)
+
+[7000字前端性能优化总结 | 干货建议收藏](https://mp.weixin.qq.com/s/4g3Y0Fm7zYgZBtSnLWuyWw)
+
+[Vue3 Teleport 简介，请过目，这个是真的好用！](https://mp.weixin.qq.com/s/xlytZhw-NGyWwAZiajqU6g)
+
+[31个很棒的JavaScript库](https://mp.weixin.qq.com/s/58mAuffRYFgTeGSPVsIWXA)
+
+[面试官：说说em/px/rem/vh/vw的区别?](https://mp.weixin.qq.com/s/LYCV3MtA2U-1HEX3G5yhWg)
+
+[toFixed 函数引起的 bug](https://mp.weixin.qq.com/s/rVRsI6zhx_xnH1eW3UYHGg)
+
+[浅谈 nodejs 中间层](https://mp.weixin.qq.com/s/Dv6bENmNin7_TPwayFX0qQ)
