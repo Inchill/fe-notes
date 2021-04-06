@@ -248,6 +248,22 @@
 
 [面对 ESM 的开发模式，webpack 还有还手之力吗？](https://mp.weixin.qq.com/s/XFlCdjOslEB3O947fJn00g)
 
+[写给前端的 Nest.js 教程——10分钟上手后端接口开发](https://mp.weixin.qq.com/s/Wng7s2qKXwVIBytI8tkoqA)
+
+[现代前端工程化-基于 Monorepo 的 lerna 详解(从原理到实战)](https://mp.weixin.qq.com/s/Yl56pLDeVPAF5JbeYPTlOw)
+
+[纯前端实现 App Store 卡片展开效果](https://mp.weixin.qq.com/s/y40GbnG4r5fuzKMHT6MX6w)
+
+[实现Web端指纹登录](https://mp.weixin.qq.com/s/eLzzjfyC8wF3T_1RPyfGOw)
+
+[二维码扫码登录是什么原理](https://mp.weixin.qq.com/s/flqUkl2WLFCCjbXI6eYeLg)
+
+[探索 Node.js 异步 Hooks](https://mp.weixin.qq.com/s/CHEd168oWvCaL90juv2YBw)
+
+* [花半天时间，轻松打造前端 CI/CD 工作流](https://mp.weixin.qq.com/s/ewyhEud3eLRCMOYAmZGdOA)
+
+[字节跳动最爱考的 64 道算法题（JS版）](https://mp.weixin.qq.com/s/HsZo757NDNV-3xnGQjPtAQ)
+
 #### May
 
 #### June
