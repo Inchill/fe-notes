@@ -228,4 +228,88 @@
 
 [什么是前端工程化](https://mp.weixin.qq.com/s/5k_YZBFdMivYstu7Q-Qn0g)
 
+[Webpack5 搭建 Vue3 + TS 项目](https://mp.weixin.qq.com/s/s85M6IeKtaltVc4v_tR5yA)
+
+[JavaScript Debugger 原理揭秘](https://mp.weixin.qq.com/s/B_kj02JcmhGS63ZFRF20ZQ)
+
+[10个你可能没用过，但很强大的Web API](https://mp.weixin.qq.com/s/_Hufto3frIqk9m9I4Ty4Hg)
+
+[移动端1px问题解决方案](https://mp.weixin.qq.com/s/aTp9BVfY_54KjgpV9orIGQ)
+
+[保姆级 Git 入门教程，10000 字详解](https://mp.weixin.qq.com/s/B8IKLdRX7g5Euu4oIIrXjg)
+
+* [ES2021/ES12 令人期待的新特性](https://mp.weixin.qq.com/s/QJm8yDiUNci28ocDtaSvPA)
+
+[【第2281期】CSS 新特性 contain，控制页面的重绘与重排](https://mp.weixin.qq.com/s/56SPp_VyqixJFEkIukjk5A)
+
+[代码自动化重构利器——jscodeshift 初探](https://mp.weixin.qq.com/s/oFoFcq6qPSObxf0yBDDhsQ)
+
+[【流水线竞品分析】GitLab CI/CD 分析与实践](https://mp.weixin.qq.com/s/pi1X85zoAQN9GQxe1SABow)
+
+[Mdpress + 腾讯云 CMS 打造动态内容站点](https://mp.weixin.qq.com/s/gpWiPfDMUXVkqZga9mPN5g)
+
+[require加载器实现原理](https://mp.weixin.qq.com/s/-ya2m7yCcj_7FwpPAa0YyA)
+
+[手写一个webpack，看看AST怎么用](https://mp.weixin.qq.com/s/bINHsNyJ-ceaYafiLai0tw)
+
+[vue中Axios的封装和API接口的管理](https://mp.weixin.qq.com/s/vP5mwy5vn9S_Jk_qseGoLw)
+
+[如何在 Node.js 中流式处理大 JSON 文件](https://mp.weixin.qq.com/s/JCn_AUKdqySnBd-vbYWbPA)
+
+[推荐一些值得关注的React Hook库](https://mp.weixin.qq.com/s/AwrwrYCx5CeEKhQLQS0gMQ)
+
+[11个软件开发人员需要掌握的Googling技巧](https://mp.weixin.qq.com/s/i4Q2cWmSU0oytDctDgwhhA)
+
+[【第2282期】向现代 Javascript 转型](https://mp.weixin.qq.com/s/2Jn_9NUTc4DSkQeAX-08HQ)
+
+[快速打造 vscode 插件](https://mp.weixin.qq.com/s/mmFBwzOZ-JAFA8zs2i1X5g)
+
+[面试官：你可以用纯 CSS 判断鼠标进入的方向吗？](https://mp.weixin.qq.com/s/00bPJFX0CD5neMV0xgVhEg)
+
+[js实现多屏/跨屏窗口放置](https://mp.weixin.qq.com/s/lMcFpcGJtafLcnkbTPKD3Q)
+
+[从一次重构组件代码来谈谈前端多语言最佳实践](https://mp.weixin.qq.com/s/V-GetBAy2v2Is5rA7-8oMA)
+
+[40个为开发者提供的免费工具](https://mp.weixin.qq.com/s/TKJysXr5cgFZhYQerYfZKA)
+
+[【Web技术】960- JavaScript 如何检测文件的类型？](https://mp.weixin.qq.com/s/bURVnwkK7OBEA56SypYscg)
+
+[从0到1实现Web端H.265播放器：YUV渲染篇](https://mp.weixin.qq.com/s/-YI2Xfjkns98-j7TR8sKJw)
+
+[Flutter 动态化新知识](https://mp.weixin.qq.com/s/FsuBJpQWX532hTyF4T3y0Q)
+
+[JavaScript引擎深入剖析(一)：JSValue 的内部实现](https://mp.weixin.qq.com/s/OlnIqu5JvO2WjIA5re9KIg)
+
+[浏览器性能优化实战](https://mp.weixin.qq.com/s/RCJftzmhQbc-b89pU5d32w)
+
+[【Web技术】961- 3分钟搞定海报合成](https://mp.weixin.qq.com/s/XlX9_58yywOJNVdydldQkQ)
+
+[绝了，没想到一个 source map 居然涉及到那么多知识盲区](https://mp.weixin.qq.com/s/_BT27OPtwcjGoaVazif-pA)
+
+[一文彻底搞懂 DvaJS 原理](https://mp.weixin.qq.com/s/frSXO79aq_BHg09rS-xHXA)
+
+[11个软件开发人员需要掌握的Googling技巧](https://mp.weixin.qq.com/s/i4Q2cWmSU0oytDctDgwhhA)
+
+[面试官：如何使用 CSS 实现斜线效果？](https://mp.weixin.qq.com/s/nlCgg5c9uxmtWSeUvJ9H6w)
+
+* [【TS】962- TS的 interface 和 type 到底有什么区别？](https://mp.weixin.qq.com/s/L2lmHr4p5ZR-OX2t1qpheQ)
+
+[为了搞清楚CDN的原理，我头都秃了...](https://mp.weixin.qq.com/s/8IzDE4blQ_yC6z90q55UhA)
+
+[由封装一个请求库所想到的](https://mp.weixin.qq.com/s/T640YuUVgclkAk28vodN3Q)
+
+[插件式可扩展架构设计心得](https://mp.weixin.qq.com/s/R_uPXQsddOu28Dnr6_1LJw)
+
+[GraphQL 实战篇之前端 Vue + Nest.js](https://mp.weixin.qq.com/s/fRYyFmXYPEraJvAQ4WZXwQ)
+
+[手把手教你写一个脚手架](https://mp.weixin.qq.com/s/1hT8n6zkMeuTmvh-zo9OCw)
+
+[前端原型链污染漏洞竟可以拿下服务器shell？](https://mp.weixin.qq.com/s/8UX3QORArIdedsyis1e15A)
+
+[Hi~ 这将是一个通用的新手引导解决方案](https://mp.weixin.qq.com/s/UMSdukMSt_t0LMuQbLzeAA)
+
+[一文看懂Chrome浏览器工作原理](https://mp.weixin.qq.com/s/SXIVJ3br8dTLu_CZgNy_8A)
+
+[实战：Express 模拟 CSRF 攻击](https://mp.weixin.qq.com/s/FMUA4qnQigI7Eo_PrUg0Sw)
+
 []()
