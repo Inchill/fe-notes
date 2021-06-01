@@ -353,3 +353,23 @@
 * [如何处理浏览器的断网情况？](https://mp.weixin.qq.com/s/EpGQwGnUYZhmhSQk4DjJ7g)
 
 [js 实现 bind 的这五层，你在第几层？](https://mp.weixin.qq.com/s/APgrQ6R6nY8BHSm22xPAhg)
+
+[消息可靠性设计，看这一篇就够了](https://mp.weixin.qq.com/s/fv4OsfSHGq2clzXtU1ICGA)
+
+* [JS常用的循环遍历你会几种？](https://mp.weixin.qq.com/s/fH0LfYs1utBBvuQnIRAQpA)
+
+[使用 CSS prefers-* 规范，提升网站的可访问性与健壮性](https://mp.weixin.qq.com/s/QM2Wl9NKJbRPekVNmIYMew)
+
+[Nest.js 实战系列一：项目创建&路由设置&模块](https://mp.weixin.qq.com/s/1uVOrptJBQKjsq4Q8dNawg)
+
+[JavaScript 异步编程指南 — 事件与回调函数 Callback](https://mp.weixin.qq.com/s/vWKPCJdMJxhvYi04ps5ZMA)
+
+[前端也要懂图形化： 浅谈 WebGL 技术](https://mp.weixin.qq.com/s/k8MbHKyzSRlBWS53Ymw3uQ)
+
+[设计稿（UI视图）自动生成代码方案的探索](https://mp.weixin.qq.com/s/-7Ry0jrrsEprARmbXmmKcA)
+
+* [前端工程师的一大神器：puppeteer](https://mp.weixin.qq.com/s/P5jQZjoMRFFSvjmYgISymw)
+
+[见微知著 - 转转离线包设计实践](https://mp.weixin.qq.com/s/b7qsnYVPIJoasIgojX3n2A)
+
+[【HTTP】971- HTTP 中的 ETag 是如何生成的？](https://mp.weixin.qq.com/s/kjkv7A0Lme-knH0B4GRdWA)
