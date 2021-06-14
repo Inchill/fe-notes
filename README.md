@@ -16,7 +16,7 @@ fe-notes 的每一个目录都是一个持续更新的前端知识点。有的�
 
 > Each catalog of fe-notes is a continuously updated front-end knowledge point. Some folders may be empty at the moment, but I will use my spare time to improve them bit by bit. For me, my notes are stored in daily-notes on weekdays, and there is not enough time to organize the scattered notes. Therefore, I will regularly spare some time on weekends to summarize.
 
-> In this way, I want to improve my knowledge system step by step, so that I can see my own growth, and I will be excited about it. I believe that there are also many people who have just started work like me who are also thinking about recording their own learning journey in the same way, so everyone is welcome to learn from each other, and become more better.
+> In this way, I want to improve my knowledge system step by step, so that I can see my own growth, and I will be excited about it. I believe that there are also many people who have just started work like me who are also thinking about recording their own learning journey in the same way, so everyone is welcome to learn from each other, and become much better.
 
 有疑问的同学也可以加我**微信**： inchill
 
