@@ -299,3 +299,17 @@
 [聊一聊 TypeScript 编译器的使用](https://mp.weixin.qq.com/s/nLG43aDSomGjCS5iIT8Gmg)
 
 [一觉醒来，竟发现自己看不懂 JS 了？](https://mp.weixin.qq.com/s/vKqrZekoOc_2NlECJOr2Tw)
+
+[前端也要懂图形学：使用 TypeScript 实现光线追踪](https://mp.weixin.qq.com/s/2O7odVinjxEXmaeD5ebBwg)
+
+[Lottie 动画在飞书中的应用实践](https://mp.weixin.qq.com/s/zOzmP6udioN1ovCG5kC24Q)
+
+[【Webpack】999- 手把手教你写一个 loader / plugin](https://mp.weixin.qq.com/s/Acx1HCz2VnRSqy1NTzr8jQ)
+
+[手摸手带你实现 Vue 3 Reactivity](https://mp.weixin.qq.com/s/WDtwdcg3Wd85FkAIJPBDPw)
+
+[【第2319期】深入了解现代浏览器之四](https://mp.weixin.qq.com/s/XN9wUM-FdWbE1m66jkEgIg)
+
+[【JS】1001- File、Blob、dataURL 和 canvas 的应用与转换](https://mp.weixin.qq.com/s/FbLDhEDtdSpnXlLXPLE21g)
+
+* [【第2320期】JavaScript代码整洁之道-复杂判断](https://mp.weixin.qq.com/s/tpkGpxNUl2K7d4AFvZym_g)
