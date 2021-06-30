@@ -48,8 +48,6 @@
 
 [让我们来构建一个浏览器引擎吧](https://mp.weixin.qq.com/s/nARZVPvB9IfYBrBWqujX-Q)
 
-[H5 页面列表缓存方案](https://mp.weixin.qq.com/s/ZuRcysVODSvLRnHqRNRAfQ)
-
 [面试官：元素水平垂直居中的方法有哪些？如果元素不定宽高呢？](https://mp.weixin.qq.com/s/r17roT-aEdElmmgNeg7qdg)
 
 [使用 Node.js 搭建一个 API 网关(助力微服务)](https://mp.weixin.qq.com/s/i7kWCe32yKfbVhWGYm6VXA)
