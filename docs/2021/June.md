@@ -124,7 +124,7 @@
 
 [新时代创意布局不完全指南](https://mp.weixin.qq.com/s/JEI9_AE0wQd3jMZWS3XxqQ)
 
-[TypeScript 声明文件全解析](https://mp.weixin.qq.com/s/y0c4daxpfvOm-oAo7A6ZFg)
+* [TypeScript 声明文件全解析](https://mp.weixin.qq.com/s/y0c4daxpfvOm-oAo7A6ZFg)
 
 [可组合的 Vue](https://mp.weixin.qq.com/s/cIWJzbAwjOSJnHK4OsLtYg)
 
