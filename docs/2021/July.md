@@ -84,6 +84,16 @@
 
 [不同样式 tooltip 对话框小三角的 CSS 实现](https://mp.weixin.qq.com/s/ypD9NaTPwvf_ENQHxp8cpg)
 
-[Vue 业务系统如何落地单元测试](https://mp.weixin.qq.com/s/0SJYjw1vVq4cd-gQtAkwQQ)
-
 [如何写好 eggjs 单元测试](https://mp.weixin.qq.com/s/TEd-WZ2b_FRDj963vc-eEg)
+
+* [一名合格前端工程师必备素质：代码整洁之道](https://mp.weixin.qq.com/s/LbSUh7P1_01CZ-GEyJimjA)
+
+[Vision 内核大升级——可视化搭建引擎 Gems 应运而生](https://mp.weixin.qq.com/s/iwYN4a_YNosyjTGBodCm9Q)
+
+[Vuejs 中避免滥用 this 读取 data 中数据](https://mp.weixin.qq.com/s/0YPvHJZtERjZKJ1hD62H7w)
+
+[Node.js 开发者的 Rust 入门指南](https://mp.weixin.qq.com/s/RXU-xofTc0sipQGOQs2WQg)
+
+* [5年前端经验的大佬提供的职业规划](https://mp.weixin.qq.com/s/91krMz7uSLB7lRY4tIYTaA)
+
+* [几个不常见却很实用的Git小命令，却收获快乐](https://mp.weixin.qq.com/s/ncy2hj7vAznjzkvnExyOHg)
