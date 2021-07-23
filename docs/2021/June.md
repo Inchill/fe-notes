@@ -246,8 +246,6 @@
 
 [React源码分析与实现(三)：实操DOM Diff](https://mp.weixin.qq.com/s/I6eNAiWwZubfipn5sGhHzw)
 
-[刨根问底，揭开 Vue 中 Scope CSS 实现的幕后（原理）](https://mp.weixin.qq.com/s/sMmhl9ZZ5K3eLL7dydWw2g)
-
 [120 行代码帮你了解 Webpack 下的 HMR 机制](https://mp.weixin.qq.com/s/CPlgM2jxjnQ_mn1VyrWQlA)
 
 [如何设计开发一个 Web 插件系统？](https://mp.weixin.qq.com/s/i4dKBwklo8HPnlmuLFgMsA)

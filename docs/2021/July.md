@@ -50,7 +50,7 @@
 
 [前端架构之 React 领域驱动设计](https://mp.weixin.qq.com/s/rICtjdO0usOp5_Zh7ncDuQ)
 
-[如何实现前端白屏监控？](https://mp.weixin.qq.com/s/DD36EIoFAHFFRcwgwZoeAw)
+[阿里巴巴体验技术部前端白屏方案分享](https://mp.weixin.qq.com/s/DzGJ-xaDMwM2eRY1_ycIUg)
 
 [浏览器指纹追踪技术，如何完整修改浏览器指纹？](https://mp.weixin.qq.com/s/8OYH0RbNlnCPD4yRaH0d0g)
 
@@ -97,3 +97,7 @@
 * [5年前端经验的大佬提供的职业规划](https://mp.weixin.qq.com/s/91krMz7uSLB7lRY4tIYTaA)
 
 * [几个不常见却很实用的Git小命令，却收获快乐](https://mp.weixin.qq.com/s/ncy2hj7vAznjzkvnExyOHg)
+
+* [深入理解Video标签](https://mp.weixin.qq.com/s/CGjRcLXG7F9RIrFhSfwbGg)
+
+[如何高效实现图片搜索？Dropbox 的核心方法和架构优化实践](https://mp.weixin.qq.com/s/B1Mrn6LrnKqDaMzn8tga4w)
