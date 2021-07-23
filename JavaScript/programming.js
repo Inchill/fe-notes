@@ -227,53 +227,53 @@
 
 
 // 先中后序遍历二叉树
-function TreeCode() {
-    let BiTree = function(ele) {
-        this.data = ele;
-        this.lchild = null;
-        this.rchild = null;
-    }
-    this.createTree = function() {
-        let biTree = new BiTree('A');
-        biTree.lchild = new BiTree('B');
-        biTree.rchild = new BiTree('C');
-        biTree.lchild.lchild = new BiTree('D');
-        biTree.lchild.rchild = new BiTree('E');
-        biTree.rchild.lchild = new BiTree('F');
-        biTree.rchild.rchild = new BiTree('G');
-        return biTree;
-    }
-}
+// function TreeCode() {
+//     let BiTree = function(ele) {
+//         this.data = ele;
+//         this.lchild = null;
+//         this.rchild = null;
+//     }
+//     this.createTree = function() {
+//         let biTree = new BiTree('A');
+//         biTree.lchild = new BiTree('B');
+//         biTree.rchild = new BiTree('C');
+//         biTree.lchild.lchild = new BiTree('D');
+//         biTree.lchild.rchild = new BiTree('E');
+//         biTree.rchild.lchild = new BiTree('F');
+//         biTree.rchild.rchild = new BiTree('G');
+//         return biTree;
+//     }
+// }
 
 //前序遍历
-function ProOrderTraverse(biTree) {
-    if (biTree == null) return;
-    console.log(biTree.data);
-    ProOrderTraverse(biTree.lChild);
-    ProOrderTraverse(biTree.rChild);
-}
-//中序遍历
-function InOrderTraverse(biTree) {
-    if (biTree == null) return;
-    InOrderTraverse(biTree.lChild);
-    console.log(biTree.data);
-    InOrderTraverse(biTree.rChild);
-}
-//后续遍历
-function PostOrderTraverse(biTree) {
-    if (biTree == null) return;
-    PostOrderTraverse(biTree.lChild);
-    PostOrderTraverse(biTree.rChild);
-    console.log(biTree.data);
-}
-let myTree = new TreeCode();
-console.log(myTree.createTree());
-console.log('前序遍历')
-ProOrderTraverse(myTree.createTree());
-console.log('中序遍历')
-InOrderTraverse(myTree.createTree());
-console.log('后续遍历')
-PostOrderTraverse(myTree.createTree());
+// function ProOrderTraverse(biTree) {
+//     if (biTree == null) return;
+//     console.log(biTree.data);
+//     ProOrderTraverse(biTree.lChild);
+//     ProOrderTraverse(biTree.rChild);
+// }
+// //中序遍历
+// function InOrderTraverse(biTree) {
+//     if (biTree == null) return;
+//     InOrderTraverse(biTree.lChild);
+//     console.log(biTree.data);
+//     InOrderTraverse(biTree.rChild);
+// }
+// //后续遍历
+// function PostOrderTraverse(biTree) {
+//     if (biTree == null) return;
+//     PostOrderTraverse(biTree.lChild);
+//     PostOrderTraverse(biTree.rChild);
+//     console.log(biTree.data);
+// }
+// let myTree = new TreeCode();
+// console.log(myTree.createTree());
+// console.log('前序遍历')
+// ProOrderTraverse(myTree.createTree());
+// console.log('中序遍历')
+// InOrderTraverse(myTree.createTree());
+// console.log('后续遍历')
+// PostOrderTraverse(myTree.createTree());
 
 // // 深度优先（栈）
 // function DFS(biTree) {
@@ -735,3 +735,89 @@ PostOrderTraverse(myTree.createTree());
 // }
 // var a = flatten([[2],[3],[[4],2],1]);
 // console.log(a);
+
+
+/**
+ * 实现两个大数相加，JavaScript 里面 number 类型统一为 64 位，其中值为 53 位，剩下的指数为 11 位，所以最大为 2^53
+ * @param {string} a 数字字符串
+ * @param {string} b 数字字符串
+ */
+function addBigNum (a = '0', b = '0') {
+  // transform to string.
+  a = a.toString()
+  b = b.toString()
+
+  // get the max length
+  var maxLen = Math.max(a.length, b.length)
+
+  // 对高位补零
+  a = a.padStart(maxLen, 0)
+  b = b.padStart(maxLen, 0)
+
+  var remainder = 0, // 进位
+    sum = ''
+  // 从低位开始对位相加
+  for (var i = maxLen - 1; i >= 0; i--) {
+    var tmp = parseInt(a[i]) + parseInt(b[i]) // 1+1=2 6+6=12
+    remainder = Math.floor(tmp / 10) // 1 or 0
+    sum = tmp % 10 + sum
+  }
+  if (remainder) {
+    sum = '1' + sum
+  }
+
+  return sum
+}
+
+console.log(addBigNum('1'.repeat(3), '5'.repeat(5))) // 55555 + 111 = 55666
+console.log(typeof addBigNum(1111, 555555555))
+
+/**
+ * 实现 Math.pow()，使用 ** 幂运算符
+ * @param {number} x 
+ * @param {number} n 
+ */
+function pow (x, n) {
+  return x ** n
+}
+
+
+// 给定一个升序整型数组 [0,1,2,4,5,7,13,15,16,17],找出其中连续出现的数字区间，
+// 输出为:
+// ["0->2","4->5","7","13","15->17”]
+function findSequenceRange (arr = []) {
+  if (arr.length === 0) return
+  var ret = [],
+    i =  0
+  ret[i] = [arr[0]]
+  var a = arr.reduce((preVal, curVal) => {
+    curVal === preVal + 1 ? ret[i].push(curVal) : ret[++i] = [curVal]
+    return curVal
+  })
+  return ret
+}
+
+function findSeqRange (arr = []) {
+  if (arr.length === 0) return
+
+  var tmp = [], ret = [], i = 0
+  arr.map((num, index) => {
+    if (index !== 0) {
+      if (arr[index - 1] + 1 === num) { // 连续
+        tmp.push(num)
+      } else { // 不连续
+        ret[i]  = tmp
+        tmp = [arr[index]]
+        i++
+      }
+    } else {
+      tmp.push(num)
+      ret[i] = [arr[0]]
+    }
+  })
+  ret[i] = tmp
+  return ret
+}
+
+console.log(findSequenceRange([0,1,2,4,5,7,13,15,16,17]))
+console.log(findSeqRange([0,1,2,4,5,7,13,15,16,17]))
