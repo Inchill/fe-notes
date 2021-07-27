@@ -372,4 +372,4 @@
 
 [见微知著 - 转转离线包设计实践](https://mp.weixin.qq.com/s/b7qsnYVPIJoasIgojX3n2A)
 
-[【HTTP】971- HTTP 中的 ETag 是如何生成的？](https://mp.weixin.qq.com/s/kjkv7A0Lme-knH0B4GRdWA)
+* [【HTTP】971- HTTP 中的 ETag 是如何生成的？](https://mp.weixin.qq.com/s/kjkv7A0Lme-knH0B4GRdWA)

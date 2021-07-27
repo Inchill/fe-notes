@@ -758,7 +758,7 @@ function addBigNum (a = '0', b = '0') {
     sum = ''
   // 从低位开始对位相加
   for (var i = maxLen - 1; i >= 0; i--) {
-    var tmp = parseInt(a[i]) + parseInt(b[i]) // 1+1=2 6+6=12
+    var tmp = parseInt(a[i]) + parseInt(b[i]) + remainder // 1+1=2 6+6=12
     remainder = Math.floor(tmp / 10) // 1 or 0
     sum = tmp % 10 + sum
   }
@@ -770,7 +770,7 @@ function addBigNum (a = '0', b = '0') {
 }
 
 console.log(addBigNum('1'.repeat(3), '5'.repeat(5))) // 55555 + 111 = 55666
-console.log(typeof addBigNum(1111, 555555555))
+console.log(addBigNum(55, 55))
 
 /**
  * 实现 Math.pow()，使用 ** 幂运算符
