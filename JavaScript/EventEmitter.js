@@ -81,6 +81,13 @@ class EventEmitter {
   setHandlerLength (len = 10) {
     this.maxHandlerCount = len
   }
+
+  /**
+   * 清除所有事件监听
+   */
+  destroy () {
+    this.events = {}
+  }
 }
 
 const eventEmitter = new EventEmitter()
@@ -118,4 +125,6 @@ eventEmitter.once('touch', touchHandler)
 eventEmitter.emit('touch')
 eventEmitter.emit('touch')
 eventEmitter.emit('touch')
+
+eventEmitter.destroy()
 console.log(eventEmitter)
