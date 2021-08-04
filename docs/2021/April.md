@@ -264,8 +264,6 @@
 
 [如何实现JavaSrcipt页面的跳转](https://mp.weixin.qq.com/s/2c96esPar1I-0Jgg56QTrQ)
 
-[Axios 如何实现请求重试？](https://mp.weixin.qq.com/s/JENETARM8hJSqwR80iopvA)
-
 * [前端也要懂编译：AST 从入门到上手指南](https://mp.weixin.qq.com/s/beo-FA6YjzolcFW-Ijhs-g)
 
 [硬核到极致的 Event Loop 讲解，不信你看完还不会](https://mp.weixin.qq.com/s/Uc4VjVGN_9xlXjdJiWmVQQ)
