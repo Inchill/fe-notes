@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .root {
+      width: 400px;
+      height: 400px;
+      overflow-y: scroll;
+    }
+
+    .list {
+      width: 100%;
+      height: 100%;
+      list-style: none;
+    }
+
+    .item:nth-of-type(odd) {
+      width: 100%;
+      height: 100%;
+      background-color: #FFE4C4;
+    }
+
+    .item:nth-of-type(even) {
+      width: 100%;
+      height: 100%;
+      background-color: #008B8B;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="root">
+    <ul class="list">
+      <li class="item"></li>
+      <li class="item"></li>
+      <li class="item"></li>
+      <li class="item"></li>
+    </ul>
+  </div>
+
+  <script>
+    ((doc) => {
+      let io = new IntersectionObserver((entries, observer) => {
+        console.log(entries)
+      }, {
+        root: document.querySelector('.root')
+      })
+
+      const target = document.querySelector('.item')
+
+      io.observe(target)
+    })(document)
+  </script>
+</body>
+
+</html>
