@@ -1,0 +1,10 @@
+## 原型对象 prototype
+
+重点说下函数，默认情况下，所有函数的原型对象（prototype）都拥有 constructor 属性和 __proto__ 属性，constructor 指向与之关联的构造函数。而原型对象作为对象，仍然拥有自己的原型对象，用 __proto__ 来表示。
+
+这样就可以理解 new 操作符的具体执行逻辑了，有以下代码：
+
+```js
+var person = new Person('Jack')
+```
+
