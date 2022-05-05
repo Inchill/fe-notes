@@ -72,7 +72,7 @@ call() 和 apply() 是函数对象的方法，它的作用是改变函数的调�
     o.m.apply(); // 0
 ```
 
-call() 和 apply() 的参数为空时，默认调用全局对象。
+call() 和 apply() 的参数为空时或者为 null/undefined，默认调用全局对象。
 
 - **bind() 方法中的 this**
 
