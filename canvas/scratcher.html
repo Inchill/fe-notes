@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas 刮刮乐</title>
+    <style>
+        #ggk {
+            width: 400px;
+            height: 100px;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+
+        .jp,
+        canvas {
+            position: absolute;
+            width: 400px;
+            height: 100px;
+            left: 0;
+            top: 0;
+            text-align: center;
+            font-size: 25px;
+            line-height: 100px;
+            color: deeppink;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">刮刮乐</h1>
+    <div id="ggk">
+        <div class="jp">不抽大嘴巴子</div>
+        <canvas id="canvas" width="400" height="100"></canvas>
+    </div>
+
+    <script>
+        document.addEventListener("selectstart", function (e) {
+            e.preventDefault();
+        })
+    
+        let canvas = document.querySelector("#canvas");
+        let ctx = canvas.getContext('2d');
+        ctx.fillStyle = 'darkgray';
+        ctx.fillRect(0, 0, 400, 100);
+
+        let isDraw = false;
+        canvas.onmousedown = function () {
+            isDraw = true;
+        }
+
+        let ggkDom = document.querySelector('#ggk');
+        let jp = document.querySelector('.jp');
+        canvas.onmousemove = function (e) {
+            if (isDraw) {
+                let x = e.pageX - ggkDom.offsetLeft + ggkDom.offsetWidth / 2;
+                let y = e.pageY - ggkDom.offsetTop;
+                ctx.beginPath();
+                ctx.arc(x, y, 30, 0, 2 * Math.PI);
+                ctx.globalCompositeOperation = 'destination-out'; // 现有内容保持在新图形不重叠的地方。
+                ctx.fill();
+                ctx.closePath();
+            }
+        }
+
+        document.onmouseup = function () {
+            isDraw = false;
+        }
+
+        let arr = [
+            { content: '一等奖：一个大嘴巴子', p: 0.1 },
+            { content: '二等奖：两个大嘴巴子', p: 0.3 },
+            { content: '三等奖：三个大嘴巴子', p: 0.5 }
+        ];
+
+        let sj = Math.random();
+        if (sj < arr[0].p) {
+            jp.innerHTML = arr[0].content;
+        } else if (sj < arr[1].p) {
+            jp.innerHTML = arr[1].content;
+        } else if (sj < arr[2].p) {
+            jp.innerHTML = arr[2].content;
+        }
+    </script>
+</body>
+</html>
