@@ -82,11 +82,18 @@ brew services restart nginx
         }
 
         location /cr-share/ {
-            alias /Users/liuyu/Documents/projects/cr-share/dist/;
+            alias /Users/xxx/Documents/projects/cr-share/dist/;
         }
 
         location /assets/ {
-            alias /Users/liuyu/Documents/projects/cr-share/dist/assets/;
+            alias /Users/xxx/Documents/projects/cr-share/dist/assets/;
+        }
+        
+        # 配置本机静态资源目录
+        location /static/ {
+	        index index.html;
+            alias /Users/xxx/Documents/static/;
+	        autoindex on;
         }
     }
 ```
