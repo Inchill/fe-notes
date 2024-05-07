@@ -54,4 +54,50 @@ lerna-repo/
 
 在 packages 下新增包是通过 `lerna create` 命令实现的。
 
+基本语法：
+
+```
+lerna create <packageName> [loc]
+```
+
+参数说明：
+
+- `<packageName>`：要创建的包的名称。
+- `[loc]`：（可选）包的目录位置。如果省略，则在当前工作目录中创建。
+
+## 添加依赖项
+
+
+`lerna add` 命令是 Lerna 工具提供的一个命令，用于向一个或多个包中添加依赖项。
+
+基本语法如下：
+
+```
+lerna add <packageName>[@version] [--dev] [--exact] [--peer] [--no-bootstrap]
+```
+
+- `<packageName>`：要添加的依赖项的包名。
+- `[@version]`：（可选）要添加的依赖项的版本。可以指定版本号，也可以是一个标签或范围。
+- `--dev`：（可选）将依赖项添加为开发依赖项。
+- `--exact`：（可选）确保添加的依赖项的版本精确匹配指定版本。
+- `--peer`：（可选）将依赖项添加为对等依赖项。
+- `--no-bootstrap`：（可选）防止在添加依赖项后运行 lerna bootstrap。
+
+如果只需要给某个子包添加依赖，需要使用 --scope 指定包。
+
+## 删除 node_modules
+
+`lerna clean` 删除所有包下面的 node_modules 目录，也可以删除指定包下面的 node_modules，同理需要使用 --scope 指定包。
+
+## 删除依赖
+
+使用 `lerna exec` 执行命令删除某个包或者所有包的指定依赖。
+
+```
+lerna exec --scope packages/my-package npm uninstall sass-loader
+```
+
+## 执行脚本
+
+`lerna run` 在包含该脚本命令的每个 package 内部执行 npm script 脚本命令，也可以指定在某个 package 下执行。
 
